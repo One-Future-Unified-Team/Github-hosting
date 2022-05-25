@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f0c905;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: blue;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: red;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  color: green;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="how-to-set-up.html">Set Up</a>
+</div>
+
+<div class="content">
+<h1>Github Hosting</h1>
+<p>Welcome to Github hosting repository for Software and Website Developer Team! The official repository for Software and Website Developer Team Github Hosting. This repository is for developer to upload their site codes and has all source codes of site hosted in Software and Website Developer Team Github Hosting.</p>
+<hr>
+<h2>Useful Links</h2>
+<ul>
+  <li><a href="About.md">About Us</a></li>
+  <li><a href="Set Up.md">Set Up</a></li>
+  <li><a href="FAQ.md">FAQ</a></li>
+  <li><a href="Pricing.md">Pricing</a></li>
+</ul>
+</div>
+
+</body>
+</html>
