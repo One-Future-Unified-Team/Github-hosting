@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pricing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: green;
+}
 
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f0c905;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: blue;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: red;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  color: green;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a class="active" href="pricing.html">Pricing</a>
+  <a href="how-to-set-up.html">Set Up</a>
+</div>
+
+<div class="content">
+<h1>Pricing</h1>
+<p>Welcome to Github Pages Hosting Pricing! A place with the pricing of Software and Website Developer Team Github Pages hosting! A place to get the pricing table of  Software and Website Developer Team Github Pages hosting. </p>
+<ul>
+  <li>10GB Bandwidth</li>
+  <li>1GB Storage</li>
+  <li>500MB backup storage</li>
+  <li>Free Technical Support</li>
+</ul>
+</div>
+
+</body>
+</html>
